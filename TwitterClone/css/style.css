@@ -1,0 +1,575 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+/* Adjusting all the element in the document by box-sizing so the element
+doesn't go out of the container.*/
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    font-family: 'Poppins', sans-serif;
+    font-size: 10px;
+}
+
+body{
+    background-color: #fff;
+}
+
+a{
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: #000;
+}
+
+/* For resizing the material icons (using !important to override the 
+font in the original class */
+.md-40 {
+    font-size: 40px !important;
+}
+
+.md-28 {
+    font-size: 28px !important;
+    
+}
+
+.md-18 {
+    font-size: 18px !important;
+    
+}
+
+.container{
+    display: flex;
+    width: 100%;
+}
+
+/* Setting the width of the header to divide the screen  */
+/* The position is set to fixed to stop the header from moving while scrolling */
+header{
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    position: fixed;
+}
+
+/* The padding is set to 35% left to bring the bar closer to the right 
+side so it will look closer to the original website  */
+.nav-bar{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding-left: 35%;
+    margin-top: 10px;
+}
+
+/* Coloring the logo at the top left */
+.logo{
+    color:  rgb(29, 161, 242);
+}
+
+/* Setting the hover effect to !important to override the original 
+effect applied to the whole nav-bar */
+.logo-link:hover{
+    background-color: rgba(29, 161, 242, 0.1) !important;
+}
+
+/* Setting the width to fit content, so the nav-bar elements
+have the background-color while hovering on the exaxt element size */
+.nav-bar a{
+    display: flex;
+    align-items: center;
+    padding: 10px 10px 10px 0;
+    width: fit-content;
+    border-radius: 100px;
+}
+
+/* Making a distance between the icons and the writing in the nav-bar */
+.nav-bar a span{
+    padding-left: 10px;
+}
+
+.nav-bar a:hover{
+    background-color:rgba(197, 198, 208, 0.3);
+}
+
+.publish-btn{
+    margin-top: 10px;
+    width: 90%;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100px;
+    border: none;
+    background-color: rgb(29, 161, 242);
+    font-size: 1.4rem;
+    font-weight: 900;
+    transition: 0.2s ease;
+}
+
+.publish-btn:hover{ 
+    background-color: rgba(29, 161, 242, 0.8);
+    cursor: pointer;
+}
+
+/* The icon which is shown at the smaller devices instead of the writing
+and is modified by media query */
+.publish-btn span:nth-child(2){
+    display: none;
+}
+
+.account{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 30%;
+    margin-top: 130px;
+    padding: 10px;
+    width: 55%;
+    align-items: center;
+    padding: 5px 10px;
+    border-radius: 100px;
+    border: none;
+}
+
+.account-img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.account-details{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 10px;
+}
+
+.account-info{
+    font-size: 1.2rem;
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+}
+
+.account-name{
+    font-weight: 800;
+}
+
+.account-tag{
+    color: #778899;
+}
+
+.account:hover{
+    background-color:rgba(197, 198, 208, 0.3);
+    cursor: pointer;
+}
+
+/* Setting the left margin by the same width of the header section, so the 
+position fixed effect is not making main section overlap the header section */
+main{
+    margin-left: 20%;
+    width: 80%;
+    display: flex;
+}
+
+.main-section{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    border-right: 1px solid #c5c6d0;
+    border-left: 1px solid #c5c6d0;
+}
+
+/* Setting the postion of the top bar in main to be sticky and the start 
+at top = 0, so the bar is not disappearing while scrolling. */
+.title{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    height: 50px;
+    background-color: #fff;
+    position: sticky;
+    top: 0;
+    padding: 0 16px;
+    margin-top: 10px;
+}
+
+.title-text{
+    font-size: 2rem;
+    font-weight: 900;
+}
+
+.title-text:hover{
+    cursor: pointer;
+}
+
+.title span:nth-child(2){
+    border-radius: 50%;
+    padding: 0 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.title span:nth-child(2):hover{
+    background-color: rgba(197, 198, 208, 0.2);
+    cursor: pointer;
+}
+
+.write-post{
+    width: 100%;
+    display: flex;
+    padding: 0 16px;
+    margin-bottom: 15px;
+}
+
+.post-input{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding-left: 10px;
+    padding-top: 10px;
+}
+
+.input-box{
+    display: flex;
+    align-items:center;
+}
+
+.input-box input{
+    border: none;
+    outline: none;
+    font-size: 1.5rem;
+}
+
+.input-actions{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+    align-items: center;
+}
+
+.input-options{
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.input-options span{
+    color: rgb(29, 161, 242);
+    border-radius: 50%;
+    padding: 5px;
+    transition: 0.2s ease;
+}
+
+.input-options span:hover{
+    cursor: pointer;
+    background-color: rgba(29, 161, 242, 0.2);
+}
+
+.input-actions .publish-btn{
+    width: 23%;
+    height: 35px;
+    font-size: 1.3rem;
+    font-weight: 800;
+}
+
+.published-post{
+    display: flex;
+    width: 100%;
+    border-top: 1px solid #c5c6d0;
+    padding: 10px 0 30px 16px;
+}
+
+.published-post:hover{
+    background-color:rgba(197, 198, 208, 0.3);
+    cursor: pointer;
+}
+
+.post-content{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 0 16px;
+}
+
+.post-title{
+    display: flex;
+    justify-content: space-between;
+}
+
+.post-title .account-info span{
+    font-size: 1.5rem;
+}
+
+.post-body{
+    display: flex;
+    padding-top: 20px;
+    font-size: 1.2rem;
+}
+
+.post-response{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    margin-right: 40px;
+}
+
+.post-response span{
+    padding: 10px 10px;
+    transition: 00.1s ease;
+}
+
+.post-response span:nth-child(1):hover{
+    color: rgb(29, 161, 242);
+    background-color: rgba(29, 161, 242, 0.2);
+    border-radius: 50%;
+}
+
+.post-response span:nth-child(2):hover{
+    color: rgb(40, 172, 31);
+    background-color: rgba(43, 242, 29, 0.2);
+    border-radius: 50%;
+}
+
+.post-response span:nth-child(3):hover{
+    color: rgb(242, 29, 29);
+    background-color: rgba(242, 29, 29, 0.2);
+    border-radius: 50%;
+}
+
+.post-response span:nth-child(4):hover{
+    color: rgb(29, 161, 242);
+    background-color: rgba(29, 161, 242, 0.2);
+    border-radius: 50%;
+}
+
+.post-response span:hover{
+    cursor: pointer;
+}
+
+.side-section{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Setting max-width instead of width to make the section more responive */
+.search-bar{
+    display: flex;
+    max-width: 70%;
+    height: 50px;
+    align-items: center;
+    background-color: #fff;
+    margin-left: 5px;
+    margin-top: 3px;
+    padding-left: 10px;
+    position: sticky;
+    top: 0;
+}
+
+.search-bar input{
+    width: 100%;
+    border: none;
+    height: 85%;
+    border-radius: 100px;
+    padding: 10px;
+    background-color: rgba(197, 198, 208, 0.2);;
+    outline-color:rgb(29, 161, 242);
+    font-size: 1.5rem;
+}
+
+.news-feed{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: 10px;
+    margin-top: 20px;
+    border-radius: 20px;
+    background-color: rgba(197, 198, 208, 0.15);
+    max-width: 70%;
+}
+
+.news-feed h2{
+    padding: 10px 20px;
+    font-size: 1.8rem;
+    font-weight: bolder;
+}
+
+
+.news-feed-content{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+    align-items: center;
+    transition: 0.2s ease;
+}
+
+
+.news-feed-content:hover{
+    cursor: pointer;
+    background-color: rgb(197, 198, 208);
+}
+
+.news-feed-content img{
+    width: 75px;
+    height: 75px;
+    border-radius: 10px;
+}
+
+.feed-info{
+    display: flex;
+    flex-direction: column;
+}
+
+.feed-info span{
+    font-size: 1.3rem;
+}
+
+.trends{
+    color: rgb(29, 161, 242);
+}
+
+.show-more{
+    color:rgb(29, 161, 242);
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    padding: 15px 20px;
+    font-size: 1.3rem;
+}
+
+.show-more:hover{
+    cursor: pointer;
+    background-color: rgb(197, 198, 208);
+}
+
+.follow-accounts{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: 10px;
+    margin-top: 20px;
+    border-radius: 20px;
+    background-color: rgba(197, 198, 208, 0.15);
+    max-width: 70%;
+}
+
+.follow-accounts h2{
+    padding: 15px 20px;
+    font-size: 1.8rem;
+    font-weight: bolder;
+}
+
+.follow-accounts-content{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+    padding: 15px 20px;
+    border: none;
+    transition: 0.2s ease;
+}
+
+.follow-accounts-content:hover{
+    cursor: pointer;
+    background-color: rgb(197, 198, 208);
+}
+
+.follow-accounts-content button{
+    background-color: #000;
+    color: #fff;
+    width: 32%;
+    height: 35px;
+    font-weight: 900;
+}
+
+.follow-accounts-content button:hover{
+   background-color: rgba(0, 0, 0, 0.8); 
+}
+
+.footer{
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    padding-left: 25px;
+    margin-top: 20px;
+}
+
+.links{
+    display: inline;
+    width: 100%;
+}
+
+.links a{
+    padding-right: 10px;
+    font-size: 1.2rem;
+    color: #778899;
+}
+
+.links a:hover{
+    text-decoration: underline;
+}
+
+.copyright{
+    padding-top: 5px;
+    font-size: 1.2rem;
+    color: #778899
+}
+
+/* Making the website responsive by media queries */
+@media only screen and (max-width: 1090px) {
+    header a span:nth-child(2){
+        display: none;
+
+    }
+
+    .account .account-details{
+        display: none;
+    }
+
+    
+    .publish-btn span:nth-child(1){
+        display: none;
+    }
+
+    .publish-btn span:nth-child(2){
+        display: inline;
+    }
+
+    .md_18{
+        font-size: 18px !important;
+    }
+}
+
+@media only screen and (max-width: 748px) {
+    .side-section{
+        display: none;
+    }
+    .main-section{
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 347px) {
+    .md-40 {
+        font-size: 36px !important;
+    }
+    
+    .md-28 {
+        font-size: 18px !important;
+    }
+
+    .input-options{
+        display: none;
+    }
+
+}
+
+@media only screen and (max-Height: 400px) {
+    .account{
+        margin-top: 20px; 
+    }
+}

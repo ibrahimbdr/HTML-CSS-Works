@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Publish</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+    <!-- The following link is to use google material icons in the document -->
+    <!-- There is must be an internet connection for the icons to be visible -->
+    <link href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp|Material+Symbols|Material+Symbols+Outlined" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <!-- flex container in row direction for header and main -->
+        <header>
+            <!-- flex header in column direction for nav bar and account div -->
+            <!-- Note: google material icons have been used in nav-bar -->
+            <div class="nav-bar">
+                <a href="#" class="logo-link">
+                    <span class="material-icons-outlined md-40 logo">
+                        format_paint
+                    </span>
+                </a>
+                <a href="#">
+                    <span class="material-icons-outlined md-28">
+                        home
+                    </span><span>Home</span>
+                </a>
+                <a href="#">
+                    <span class="material-icons-outlined md-28">
+                        tag
+                    </span><span>Explore</span>
+                </a>
+                <a href="#">
+                    <span class="material-icons-outlined md-28">
+                        notifications
+                    </span><span>Notifications</span>
+                </a>
+                <a href="#">
+                    <span class="material-icons-outlined md-28">
+                        mail
+                    </span><span>Messages</span>
+                </a>
+                <a href="#">
+                    <span class="material-icons-outlined md-28">
+                        bookmarks
+                    </span><span>Bookmarks</span>
+                </a>
+                <a href="#">
+                    <span class="material-icons-outlined md-28">
+                        article
+                    </span><span>Lists</span>
+                </a>
+                <a href="#">
+                    <span class="material-icons-outlined md-28">
+                        person
+                    </span><span>Profile</span>
+                </a>
+                <a href="#">
+                    <span class="material-icons-outlined md-28">
+                        pending
+                    </span><span>More</span>
+                </a>
+                <!-- The second span in button is for media query purpose for making responsive button -->
+                <button class="publish-btn">
+                    <span>Publish</span>
+                    <span class="material-icons-outlined">
+                        edit
+                    </span> 
+                </button>
+            </div>
+            <div class="account">
+                <img class="account-img" src="images/user.png" alt="user photo">
+                <div class="account-details">
+                    <div class="account-info">
+                        <span class="account-name">Ibrahim</span>
+                        <span class="account-tag">@ITI</span>
+                    </div>
+                    <span class="material-icons-outlined">
+                        more_horiz
+                    </span>
+                </div>
+            </div>
+        </header>
+        <main>
+            <div class="main-section">
+                <div class="title">
+                    <span class="title-text">Home</span>
+                    <span class="material-icons-outlined">
+                        auto_awesome
+                    </span>
+                </div>
+                <!-- Here the top middle section for writing posts -->
+                <div class="write-post">
+                    <img src="images/user.png" alt="user photo" class="account-img">
+                    <div class="post-input">
+                        <div class="input-box">
+                            <input type="text" placeholder="Write & Publish ...">
+                        </div>
+                        <div class="input-actions">
+                            <div class="input-options">
+                                <span class="material-icons-outlined md_18">
+                                    image
+                                </span>
+                                <span class="material-icons-outlined md_18">
+                                    gif_box
+                                </span>
+                                <span class="material-icons-outlined md_18">
+                                    ballot
+                                </span>
+                                <span class="material-icons-outlined md_18">
+                                    mood
+                                </span>
+                                <span class="material-icons-outlined md_18">
+                                    schedule
+                                </span>
+                                <span class="material-icons-outlined md_18">
+                                    my_location
+                                </span>
+                            </div>
+                            <!-- The samething for the previous button is done here (responsive) -->
+                            <button class="publish-btn">
+                                <span>Publish</span>
+                                <span class="material-icons-outlined">
+                                    edit
+                                </span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <!-- The following section is for the published posts in the website -->
+                <div class="published-post">
+                    <img src="images/user.png" alt="user photo" class="account-img">
+                    <div class="post-content">
+                        <div class="post-title">
+                            <div class="account-info">
+                                <span class="account-name">Ibrahim</span>
+                                <span class="account-tag">@ITI</span>
+                            </div>
+                            <span class="material-icons-outlined">
+                                more_horiz
+                            </span>
+                        </div>
+                        <div class="post-body">
+                            <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis minima accusamus dolores deserunt nostrum aperiam, culpa earum, quam perspiciatis, fuga libero aut quo maiores dolorem exercitationem. Maiores beatae reprehenderit fugit.</span>
+                        </div>
+                        <!-- The following part is for the actions on the posts(comment, like, ...) -->
+                        <div class="post-response">
+                            <span class="material-icons-outlined md-18">
+                                comment
+                            </span>
+                            <span class="material-icons-outlined md-18">
+                                loop
+                            </span>
+                            <span class="material-icons-outlined md-18">
+                                favorite_border
+                            </span>
+                            <span class="material-icons-outlined md-18">
+                                share
+                            </span>
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="published-post">
+                    <img src="images/user.png" alt="user photo" class="account-img">
+                    <div class="post-content">
+                        <div class="post-title">
+                            <div class="account-info">
+                                <span class="account-name">Ibrahim</span>
+                                <span class="account-tag">@ITI</span>
+                            </div>
+                            <span class="material-icons-outlined">
+                                more_horiz
+                            </span>
+                        </div>
+                        <div class="post-body">
+                            <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis minima accusamus dolores deserunt nostrum aperiam, culpa earum, quam perspiciatis, fuga libero aut quo maiores dolorem exercitationem. Maiores beatae reprehenderit fugit.</span>
+                        </div>
+                        <div class="post-response">
+                            <span class="material-icons-outlined md-18">
+                                comment
+                            </span>
+                            <span class="material-icons-outlined md-18">
+                                loop
+                            </span>
+                            <span class="material-icons-outlined md-18">
+                                favorite_border
+                            </span>
+                            <span class="material-icons-outlined md-18">
+                                share
+                            </span>
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="published-post">
+                    <img src="images/user.png" alt="user photo" class="account-img">
+                    <div class="post-content">
+                        <div class="post-title">
+                            <div class="account-info">
+                                <span class="account-name">Ibrahim</span>
+                                <span class="account-tag">@ITI</span>
+                            </div>
+                            <span class="material-icons-outlined">
+                                more_horiz
+                            </span>
+                        </div>
+                        <div class="post-body">
+                            <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis minima accusamus dolores deserunt nostrum aperiam, culpa earum, quam perspiciatis, fuga libero aut quo maiores dolorem exercitationem. Maiores beatae reprehenderit fugit.</span>
+                        </div>
+                        <div class="post-response">
+                            <span class="material-icons-outlined md-18">
+                                comment
+                            </span>
+                            <span class="material-icons-outlined md-18">
+                                loop
+                            </span>
+                            <span class="material-icons-outlined md-18">
+                                favorite_border
+                            </span>
+                            <span class="material-icons-outlined md-18">
+                                share
+                            </span>
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="published-post">
+                    <img src="images/user.png" alt="user photo" class="account-img">
+                    <div class="post-content">
+                        <div class="post-title">
+                            <div class="account-info">
+                                <span class="account-name">Ibrahim</span>
+                                <span class="account-tag">@ITI</span>
+                            </div>
+                            <span class="material-icons-outlined">
+                                more_horiz
+                            </span>
+                        </div>
+                        <div class="post-body">
+                            <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis minima accusamus dolores deserunt nostrum aperiam, culpa earum, quam perspiciatis, fuga libero aut quo maiores dolorem exercitationem. Maiores beatae reprehenderit fugit.</span>
+                        </div>
+                        <div class="post-response">
+                            <span class="material-icons-outlined md-18">
+                                comment
+                            </span>
+                            <span class="material-icons-outlined md-18">
+                                loop
+                            </span>
+                            <span class="material-icons-outlined md-18">
+                                favorite_border
+                            </span>
+                            <span class="material-icons-outlined md-18">
+                                share
+                            </span>
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="published-post">
+                    <img src="images/user.png" alt="user photo" class="account-img">
+                    <div class="post-content">
+                        <div class="post-title">
+                            <div class="account-info">
+                                <span class="account-name">Ibrahim</span>
+                                <span class="account-tag">@ITI</span>
+                            </div>
+                            <span class="material-icons-outlined">
+                                more_horiz
+                            </span>
+                        </div>
+                        <div class="post-body">
+                            <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis minima accusamus dolores deserunt nostrum aperiam, culpa earum, quam perspiciatis, fuga libero aut quo maiores dolorem exercitationem. Maiores beatae reprehenderit fugit.</span>
+                        </div>
+                        <div class="post-response">
+                            <span class="material-icons-outlined md-18">
+                                comment
+                            </span>
+                            <span class="material-icons-outlined md-18">
+                                loop
+                            </span>
+                            <span class="material-icons-outlined md-18">
+                                favorite_border
+                            </span>
+                            <span class="material-icons-outlined md-18">
+                                share
+                            </span>
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="published-post">
+                    <img src="images/user.png" alt="user photo" class="account-img">
+                    <div class="post-content">
+                        <div class="post-title">
+                            <div class="account-info">
+                                <span class="account-name">Ibrahim</span>
+                                <span class="account-tag">@ITI</span>
+                            </div>
+                            <span class="material-icons-outlined">
+                                more_horiz
+                            </span>
+                        </div>
+                        <div class="post-body">
+                            <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis minima accusamus dolores deserunt nostrum aperiam, culpa earum, quam perspiciatis, fuga libero aut quo maiores dolorem exercitationem. Maiores beatae reprehenderit fugit.</span>
+                        </div>
+                        <div class="post-response">
+                            <span class="material-icons-outlined md-18">
+                                comment
+                            </span>
+                            <span class="material-icons-outlined md-18">
+                                loop
+                            </span>
+                            <span class="material-icons-outlined md-18">
+                                favorite_border
+                            </span>
+                            <span class="material-icons-outlined md-18">
+                                share
+                            </span>
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="published-post">
+                    <img src="images/user.png" alt="user photo" class="account-img">
+                    <div class="post-content">
+                        <div class="post-title">
+                            <div class="account-info">
+                                <span class="account-name">Ibrahim</span>
+                                <span class="account-tag">@ITI</span>
+                            </div>
+                            <span class="material-icons-outlined">
+                                more_horiz
+                            </span>
+                        </div>
+                        <div class="post-body">
+                            <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis minima accusamus dolores deserunt nostrum aperiam, culpa earum, quam perspiciatis, fuga libero aut quo maiores dolorem exercitationem. Maiores beatae reprehenderit fugit.</span>
+                        </div>
+                        <div class="post-response">
+                            <span class="material-icons-outlined md-18">
+                                comment
+                            </span>
+                            <span class="material-icons-outlined md-18">
+                                loop
+                            </span>
+                            <span class="material-icons-outlined md-18">
+                                favorite_border
+                            </span>
+                            <span class="material-icons-outlined md-18">
+                                share
+                            </span>
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="published-post">
+                    <img src="images/user.png" alt="user photo" class="account-img">
+                    <div class="post-content">
+                        <div class="post-title">
+                            <div class="account-info">
+                                <span class="account-name">Ibrahim</span>
+                                <span class="account-tag">@ITI</span>
+                            </div>
+                            <span class="material-icons-outlined">
+                                more_horiz
+                            </span>
+                        </div>
+                        <div class="post-body">
+                            <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis minima accusamus dolores deserunt nostrum aperiam, culpa earum, quam perspiciatis, fuga libero aut quo maiores dolorem exercitationem. Maiores beatae reprehenderit fugit.</span>
+                        </div>
+                        <div class="post-response">
+                            <span class="material-icons-outlined md-18">
+                                comment
+                            </span>
+                            <span class="material-icons-outlined md-18">
+                                loop
+                            </span>
+                            <span class="material-icons-outlined md-18">
+                                favorite_border
+                            </span>
+                            <span class="material-icons-outlined md-18">
+                                share
+                            </span>
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="published-post">
+                    <img src="images/user.png" alt="user photo" class="account-img">
+                    <div class="post-content">
+                        <div class="post-title">
+                            <div class="account-info">
+                                <span class="account-name">Ibrahim</span>
+                                <span class="account-tag">@ITI</span>
+                            </div>
+                            <span class="material-icons-outlined">
+                                more_horiz
+                            </span>
+                        </div>
+                        <div class="post-body">
+                            <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis minima accusamus dolores deserunt nostrum aperiam, culpa earum, quam perspiciatis, fuga libero aut quo maiores dolorem exercitationem. Maiores beatae reprehenderit fugit.</span>
+                        </div>
+                        <div class="post-response">
+                            <span class="material-icons-outlined md-18">
+                                comment
+                            </span>
+                            <span class="material-icons-outlined md-18">
+                                loop
+                            </span>
+                            <span class="material-icons-outlined md-18">
+                                favorite_border
+                            </span>
+                            <span class="material-icons-outlined md-18">
+                                share
+                            </span>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+            <!-- The second part of the main where it located at the right side -->
+            <div class="side-section">
+                <div class="search-bar">
+                    <input type="search" placeholder="Search Publish ...">
+                </div>
+                <div class="news-feed">
+                    <h2>What's happening</h2>
+                    <div class="news-feed-content">
+                        <div class="feed-info">
+                            <span class="account-tag">Lorem, ipsum. . Last night</span>
+                            <span class="account-name">Lorem, ipsum dolor.</span>
+                            <span class="account-tag">Trending with <span class="trends">Lorem, #Lorem</span></span>
+                        </div>
+                        <img src="images/image.png" alt="" class="account-img">
+                    </div>
+                    <div class="news-feed-content">
+                        <div class="feed-info">
+                            <span class="account-tag">Lorem, ipsum. . Last night</span>
+                            <span class="account-name">Lorem, ipsum dolor.</span>
+                            <span class="account-tag">Trending with <span class="trends">Lorem, #Lorem</span></span>
+                        </div>
+                        <img src="images/image.png" alt="" class="account-img">
+                    </div>
+                    <div class="news-feed-content">
+                        <div class="feed-info">
+                            <span class="account-tag">Lorem, ipsum. . Last night</span>
+                            <span class="account-name">Lorem, ipsum dolor.</span>
+                            <span class="account-tag">Trending with <span class="trends">Lorem, #Lorem</span></span>
+                        </div>
+                        <img src="images/image.png" alt="" class="account-img">
+                    </div>
+                    
+                </div>
+                <div class="follow-accounts">
+                    <h2>Who to follow</h2>
+                    <div class="follow-accounts-content">
+                        <img src="images/user.png" alt="" class="account-img">
+                        <div class="account-details">
+                            <div class="account-info">
+                                <span class="account-name">Ibrahim</span>
+                                <span class="account-tag">@ITI</span></span>
+                            </div>
+                            <button class="publish-btn">
+                                Follow
+                            </button>
+                        </div>
+                    </div>
+                    <div class="follow-accounts-content">
+                        <img src="images/user.png" alt="" class="account-img">
+                        <div class="account-details">
+                            <div class="account-info">
+                                <span class="account-name">Ibrahim</span>
+                                <span class="account-tag">@ITI</span></span>
+                            </div>
+                            <button class="publish-btn">
+                                Follow
+                            </button>
+                        </div>
+                    </div>
+                    <div class="follow-accounts-content">
+                        <img src="images/user.png" alt="" class="account-img">
+                        <div class="account-details">
+                            <div class="account-info">
+                                <span class="account-name">Ibrahim</span>
+                                <span class="account-tag">@ITI</span></span>
+                            </div>
+                            <button class="publish-btn">
+                                Follow
+                            </button>
+                        </div>
+                    </div>
+                    <div class="show-more">
+                        Show more
+                    </div>
+                </div>
+                <div class="footer">
+                    <div class="links">
+                        <a href="#">Terms of Service</a>
+                        <a href="#">Privacy Policy</a>
+                        <a href="#">Cookie Policy</a>
+                        <a href="#">Accessability</a>
+                        <a href="#">Ads info</a>
+                        <a href="#">More ...</a>
+                    </div>
+                    <span class="copyright">© 2022 Publish, Inc.</span>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    
+</body>
+</html>

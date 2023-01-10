@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        row{
+            display: flex;
+        }
+        /* [class*=col] */
+        .col-1{
+            width: 6.25%;
+        }
+        .col-2{
+            width: 12.5%;
+        }
+        .col-3{
+            width: 18.75%;
+        }
+        .col-4{
+            width: 25%;
+        }
+        .col-5{
+            width: 31.25%;
+        }
+        .col-6{
+            width: 37.5%;
+        }
+        .col-7{
+            width: 43.75%;
+        }
+        .col-8{
+            width: 50%;
+        }
+        .col-9{
+            width: 56.25%;
+        }
+        .col-10{
+            width: 62.5%;
+        }
+        .col-11{
+            width: 68.75%;
+        }
+        .col-12{
+            width: 75%;
+        }
+        .col-13{
+            width: 81.25%;
+        }
+        .col-14{
+            width: 87.5%;
+        }
+        .col-15{
+            width: 93.75%;
+        }
+        .col-16{
+            width: 100%;
+        }
+
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="row">
+        <div id="profileImg" class="col-16 profileImg">
+            <img src="./male.png" alt="">
+            <img src="./download.jpeg" alt="">
+        </div>
+    </div>
+    <div class="row profileInfo">
+        <div class="col-16">
+            <h1>Lorem, ipsum dolor.</h1>
+            <h5>Lorem ipsum dolor sit amet.</h5>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio facere molestiae blanditiis ducimus alias veritatis laboriosam natus sit nobis vero, voluptate, ea repudiandae maiores possimus, illum iste dolore reprehenderit neque? Non adipisci dicta, consequatur quibusdam odio molestiae nisi enim? Dolore ullam explicabo vitae architecto excepturi rem incidunt veniam praesentium ipsa!</p>
+        </div>
+    </div>
+    <div class="row cv-section eduTitle">
+        <div class="col-16">
+            <h2>EDUCATION</h2>
+        </div>
+    </div>
+    <div class="row cv-section eduBody">
+        <div class="col-3">
+            <p>Lorem ipsum dolor sit amet.</p>
+            <span>1997-2001</span>
+        </div>
+        <div class="col-1">
+            <span></span>
+        </div>
+        <div class="col-3">
+            <p>Lorem ipsum dolor sit amet.</p>
+            <span>1997-2001</span>
+        </div>
+        <div class="col-1">
+            <span></span>
+        </div>
+        <div class="col-3">
+            <p>Lorem ipsum dolor sit amet.</p>
+            <span>1997-2001</span>
+        </div>
+        <div class="col-1">
+            <span></span>
+        </div>
+        <div class="col-3">
+            <p>Lorem ipsum dolor sit amet.</p>
+            <span>1997-2001</span>
+        </div>
+        <div class="col-1">
+            <span></span>
+        </div>
+    </div>
+    <div class="row cv-section achTitle">
+        <div class="col-16">
+            <h2>ACHIEVEMENTS</h2>
+        </div>
+    </div>
+    <div class="row cv-section achBody">
+        <div class="col-4">
+            <p class="achevP">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti, quidem.</p>
+        </div>
+        <div class="col-4">
+            <p class="achevP">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti, quidem.</p>
+        </div>
+        <div class="col-4">
+            <p class="achevP">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti, quidem.</p>
+        </div>
+    </div>
+    <div class="row cv-section workTitle">
+        <div class="col-16">
+            <h2>WORK EXPERIENCE</h2>
+        </div>
+    </div>
+    <div class="row cv-section workBody">
+        <div class="col-4">
+            <h5>Name of Company</h5>
+            <span class="workPlace">WORKPLACE</span>
+            <span>2005-2009</span>
+        </div>
+        <div class="col-4">
+            <h5>Name of Company</h5>
+            <span class="workPlace">WORKPLACE</span>
+            <span>2005-2009</span>
+        </div>
+        <div class="col-4">
+            <h5>Name of Company</h5>
+            <span class="workPlace">WORKPLACE</span>
+            <span>2005-2009</span>
+        </div>
+        <div class="col-4">
+            <h5>Name of Company</h5>
+            <span class="workPlace">WORKPLACE</span>
+            <span>2005-2009</span>
+        </div>
+    </div>
+
+    <div class="row footer">
+        <div class="col-4">
+            <h3>CONTACT</h3>
+            <ul>
+                <li><i class="fa-solid fa-house-user"></i>Lorem, ipsum.</li>
+                <li><i class="fa-solid fa-phone"></i>+123 456 789</li>
+                <li><i class="fa-solid fa-at"></i>www.example.com</li>
+                <li><i class="fa-brands fa-chrome"></i>info@emailcom</li>
+            </ul>
+        </div>
+        <div class="col-4">
+            <h3>LANGUAGES</h3>
+        <div class="footerMeter">
+            <label for="English">
+                English
+            </label>
+            <meter class="lanMeter" min="0" max="1" value="0.7"></meter>
+        </div>
+        <div class="footerMeter">
+            <label for="German">
+                German
+            </label>
+            <meter class="lanMeter" min="0" max="1" value="0.7"></meter>
+        </div>
+        <div class="footerMeter">
+            <label for="Spanish">
+                Spanish
+            </label>
+            <meter class="lanMeter" min="0" max="1" value="0.7"></meter>
+        </div>
+        </div>
+        <div class="col-4">
+            <h3>SKILLS</h3>
+                <div class="footerMeter">
+                    <label for="GraphicDesign">
+                        Graphic Design
+                    </label>
+                    <meter id="GraphicDesign" class="skillMeter" min="0" max="1" value="0.7"></meter>
+                </div>
+                <div class="footerMeter">
+                    <label for="German">
+                        Web Design
+                    </label>
+                    <meter id="WebDesign" class="skillMeter" min="0" max="1" value="0.7"></meter>
+                </div>
+                <div class="footerMeter">
+                    <label for="Spanish">
+                        Typograohy
+                    </label>
+                    <meter id="Typograohy" class="skillMeter" min="0" max="1" value="0.7"></meter>
+                </div>
+        </div>
+        <div class="col-4">
+             <h3>HOBBIES</h3>
+           <ul>
+                <li>Mountain biking</li>
+                <li>Hiking</li>
+                <li>Football</li>
+                <li>Movies</li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

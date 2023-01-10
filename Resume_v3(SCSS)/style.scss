@@ -1,0 +1,221 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    color: #505050;
+}
+
+$green1: #0BAB64;
+$yellow1: #F9EA8F;
+
+a{
+    text-decoration: none;
+    color: #000
+}
+
+.nav-bar{
+    height: 9vh;
+}
+
+.nav-bar .col-6{
+    display: flex;
+    justify-content: space-between;
+}
+
+.title{
+    display: flex;
+}
+
+.cover{
+    background-image: linear-gradient(to right, $green1, $yellow1);
+    margin-bottom: 20px;   
+}
+
+.starting{
+    margin-bottom: 10px;
+}
+
+.cover .col-5{
+    display: flex;
+    flex-direction: column;
+    height: 42vh;
+    justify-content: center;
+    color: #fff;
+}
+
+.cover img{
+    width: 73%;
+}
+
+.cards .col-3{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #000;
+    text-align: center;
+    border-radius: 10px;
+    margin: 5px;
+    margin-bottom: 5vh;
+}
+
+.cards .col-3>*{
+    margin-bottom: 10px;
+}
+
+.cards .col-3 i{
+    font-size: 4rem;
+}
+
+.sections{
+    margin-top: 20px;
+    // justify-content: space-between !important;
+    height: fit-content;
+    align-items: flex-start !important;
+
+}
+
+.sections img{
+    width: 100px;
+    // height: fit-content;
+}
+
+.date, .comment{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.sections .col-5{
+    display: flex;
+    flex-direction: column;
+}
+
+.sections .col-5 h3{
+    margin-bottom: 20px;
+}
+
+.sections .col-5 .blog{
+    display: flex;
+    // border: 1px solid #000;
+    margin-bottom: 5px;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.blog-info{
+    margin: 5px;
+}
+
+.blog-section >:nth-child(2){
+    border-bottom: 1px solid #000;
+}
+
+meter{
+    width: 100%;
+}
+
+meter::-webkit-meter-bar {
+    border-radius: 0;
+}
+
+
+.skillMeter::-webkit-meter-optimum-value {
+    background: red; 
+}
+
+.btn-primary{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: fit-content;
+    padding-left: 20px;
+    padding-right: 20px;
+    height: 40px;
+    text-align: center;
+    border: none;
+    background-color: $yellow1;
+    font-weight: 700;
+    color: #505050;
+}
+
+.btn-primary:hover{
+    
+        cursor: pointer;
+    }
+
+
+.footer-1,
+.footer-2{
+    background-color: #505050;
+    color: #fff;  
+
+}
+
+.footer-2{
+    img{
+        width: 150px;
+        border-radius: 50%;
+        background-color: #fff;
+    }
+}
+
+.footer-3{
+    color: #fff;
+    background-color: #757575;
+}
+
+.footer-1{
+    margin-top: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+@media screen and (min-width: 935px){
+    .cover{
+        img{
+            width: 200px
+        }
+    }
+}
+
+
+@media screen and (max-width: 810px) {
+    body{
+        font-size: 12px;
+    }
+    .footer-2{
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 573px) {
+    .cards{
+        flex-wrap: wrap;
+        align-content: center;
+        .col-3{
+            width: 30%;
+        }
+    }
+    .sections{
+        flex-wrap: wrap;
+        .col-5{
+            width: 50%;
+        }
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .cover{
+        img{
+            display: none;
+        }
+    }
+}

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tiger-Move</title>
+    <style>
+      img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 120px;
+        transform: scaleX(-1);
+        animation: walking 10s linear infinite;
+      }
+
+      @keyframes walking {
+        0% {
+          left: 0;
+          transform: scaleX(-1);
+        }
+        49% {
+          transform: scaleX(-1);
+        }
+        50% {
+          left: 1100px;
+          transform: scaleX(1);
+        }
+        99% {
+          transform: scaleX(1);
+        }
+        100% {
+          left: 0;
+          transform: scaleX(-1);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <img id="img" src="./images/tiger.gif" alt="" />
+  </body>
+</html>

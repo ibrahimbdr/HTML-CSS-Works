@@ -1,0 +1,322 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Hind+Siliguri:wght@400;700&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+$fontDancing: 'Dancing Script';
+$fontHind: 'Hind Siliguri';
+$redDegree: #FF5976;
+$blGrDegree: #33A9AC;
+$lemonDegree: #28B67E;
+$charclolDegree: #464646;
+
+@mixin centerDiv{
+    margin:0 auto;
+}
+
+body{
+    font-family: $fontHind, sans-serif;
+    font-size: 14px;
+}
+
+li{
+    list-style-type: none;
+}
+
+.profileImg{
+    text-align: center;
+    :nth-child(2){
+        display: none;
+    }
+    img{
+        max-width: 220px;
+    }
+}
+
+.profileInfo{
+    text-align: center;
+    width: 75vw;
+    @include centerDiv;
+    h5{
+        color: $blGrDegree;
+    }
+    p{
+        font-family: $fontDancing;
+        text-align: center;
+    }
+    
+}
+
+.cv-section{
+    @include centerDiv;
+    text-align: center;
+    margin-top: 15px;
+    width: 70vw;
+    height: 20vh;
+    display: flex;
+    align-items: center;
+}
+
+.eduTitle{
+    background-color: $blGrDegree;
+    height: 40px;
+    color: #fff;
+}
+
+.achTitle{
+    background-color: $redDegree;
+    @extend .eduTitle;
+}
+
+.workTitle{
+    background-color: $lemonDegree;
+    @extend .eduTitle;
+}
+
+
+.eduBody{
+   .col-1{
+       span{
+        display: block;
+        padding-top: 100%;
+        border-bottom: 3px solid;
+       }
+   }
+    
+    >:nth-child(2){
+        span{
+            border-color: $redDegree !important;
+        }
+    }
+    >:nth-child(4){
+        span{
+            border-color: $lemonDegree !important;
+        }
+    }
+    >:nth-child(6){
+        span{
+
+            border-color: $blGrDegree !important;
+        }
+    }
+    >:nth-child(8){
+        span{
+            border-color: orange !important;
+        }
+    }
+
+}
+
+.achBody{
+    display: flex;
+    justify-content: space-around;
+}
+
+.achevP{
+    text-align: start;
+    
+}
+
+.workBody{
+
+    .col-4{
+        display: flex;
+        flex-direction: column;
+        span{
+            font-weight: 700;
+        }
+        .workPlace{
+            color: $lemonDegree;
+        }
+
+    }
+    
+}
+
+.footer{
+    display: flex;
+    width: 100vw;
+    text-align: center;
+    margin-top: 20px;
+    background-color: #464646;
+    padding: 20px;
+    color:#ffffff;
+    :nth-child(1){
+        h3{
+            color: $redDegree;
+            border-color: $redDegree;
+        }
+    }
+    :nth-child(2){
+        h3{
+            color: $blGrDegree;
+            border-color: $blGrDegree;
+        }
+    }
+    :nth-child(3){
+        h3{
+            color: $lemonDegree;
+            border-color: $lemonDegree;
+        }
+    }
+    :nth-child(4){
+        h3{
+            color: orange;
+            border-color: orange;
+        }
+    }
+    h3{
+        border-bottom: 3px solid;
+        margin-left: 5px;
+        margin-bottom: 10px;
+    }
+
+    div{
+        display: flex;
+        flex-direction: column;
+    }
+   
+    .meter{
+        justify-content: center;
+        align-items: center;
+    }
+
+    ul{
+        @include centerDiv;
+    }
+
+    li{
+        @extend  .achevP;
+        i{
+            padding-right: 10px
+        }
+    }
+
+}
+
+.footerMeter{
+    display: flex;
+    flex-direction: column;
+    align-items: center
+}
+
+.footerMeter div{
+    @include centerDiv;
+    padding-left: 10px;
+}
+
+meter{
+    height: 10pxpx;
+    width: 120px;
+}
+
+meter::-webkit-meter-bar {
+    border-radius: 0;
+}
+
+
+.lanMeter::-webkit-meter-optimum-value {
+    background: $blGrDegree; 
+}
+
+.skillMeter::-webkit-meter-optimum-value {
+    background: $lemonDegree; 
+}
+
+@media screen and (max-width: 480px) {
+    .profileImg{
+        img{
+            width: 120px;
+        }
+        :nth-child(1){
+            display: none;
+        }
+        :nth-child(2){
+            display: block;
+            @include centerDiv;
+            
+        }
+    }
+    .cv-section{
+        flex-wrap: wrap;
+        font-size: 0.5rem;
+        .col-4{
+            width: 50%;
+        }
+    }
+    .eduBody{
+        flex-wrap: wrap;
+        font-size: 0.7rem;
+        span{
+            font-size: 0.5rem;
+        }
+        .col-3{
+            width: 25%;
+        }
+        .col-1{
+            width: 12.5%;
+        }
+    }
+    .achBody{
+        flex-wrap: wrap;
+        p{
+            font-size: 0.7rem;
+        }
+    }
+    .workBody{
+        font-size: 0.7rem;
+        .workPlace{
+            font-size: 0.5rem;
+        }
+    }
+    .footer{
+        flex-wrap: wrap !important;
+        .col-4{
+            width: 50%;
+        }
+        h3{
+            font-size: 0.8rem;
+        }
+        li{
+            font-size: 0.5rem;
+            i{
+                padding-right: 0;
+            }
+        }
+        label{
+            font-size: 0.5rem;
+        }
+        meter{
+            width: 70px;
+            height: 7px;
+        }
+    }
+}
+@media screen and (max-width: 384px) {
+    .eduBody{
+        p{
+            font-size: 0.5rem;
+        }
+    }
+    .achBody{
+        p{
+            font-size: 0.5rem;
+        }
+    }
+}
+
+@media screen and (max-width: 194px) {
+    .eduBody{
+        p{
+            font-size: 0.4rem;
+        }
+        .col-3{
+            width: 37.5%;
+        }
+        .col-1{
+            width: 18.75%;
+        }
+    }
+}
